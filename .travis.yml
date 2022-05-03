@@ -1,0 +1,25 @@
+sudo: required
+language: python
+services:
+  - docker
+
+before_install:
+  - echo "======== before install ========"
+
+script:
+  - docker build -t jkonovsky/flask-app-template app
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+  region: "us-east-2"
+  app: "flask-app-template"
+  env: "Flaskapptemplate-env"
+  bucket_name: "elasticbeanstalk-us-east-2-524057441336"
+  bucket_path: "flask-app-template"
+  on:
+    branch: main
+
+after_deploy:
+  - echo "======== done deploying !!!! ========"
