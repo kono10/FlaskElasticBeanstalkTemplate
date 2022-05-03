@@ -6,10 +6,11 @@
 * Flask/Python
 * Docker
 
-### App Resources
+### App Resources (links may break)
 * [Aws App Environment](https://us-east-2.console.aws.amazon.com/elasticbeanstalk/home?region=us-east-2#/environment/dashboard?applicationName=flask-app-template&environmentId=e-zsbsqbgptm)
 * [Aws App Dashboard](https://us-east-2.console.aws.amazon.com/elasticbeanstalk/home?region=us-east-2#/applications)
-* [Travis Ci]()
+* [Travis Ci](https://app.travis-ci.com/github/kono10/FlaskElasticBeanstalkTemplate)
+* [App Link](http://flaskapptemplate-env.eba-v9rkjc5v.us-east-2.elasticbeanstalk.com/)
 
 ### App Notes
 * Uses a single docker container
